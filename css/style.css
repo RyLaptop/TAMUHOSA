@@ -9,6 +9,7 @@
   --navy-dark: #004C7C;
   --navy-deep: #00385B;
   --maroon: #500000;
+  --maroon-dark: #350000;
   --ink: #16222e;
   --cream: #f4f7f8;
   --paper: #e9eff1;
@@ -173,17 +174,17 @@ nav a {
 nav a:hover { color: var(--navy); background: rgba(27, 58, 92, 0.07); text-decoration: none; }
 
 .nav-cta {
-  background: var(--navy);
+  background: var(--maroon);
   color: var(--warm-white) !important;
   padding: 9px 20px !important;
   border-radius: 999px;
   font-weight: 600;
   margin-left: 4px;
-  box-shadow: 0 3px 10px -3px rgba(27, 58, 92, 0.55);
+  box-shadow: 0 3px 10px -3px rgba(80, 0, 0, 0.5);
   transition: background 150ms var(--ease), transform 150ms var(--ease), box-shadow 150ms var(--ease);
 }
 
-.nav-cta:hover { background: var(--navy-dark); transform: translateY(-1px); box-shadow: 0 6px 14px -4px rgba(27, 58, 92, 0.55); }
+.nav-cta:hover { background: var(--maroon-dark); transform: translateY(-1px); box-shadow: 0 6px 14px -4px rgba(80, 0, 0, 0.5); }
 .nav-cta:active { transform: translateY(0) scale(0.97); }
 
 /* Dropdown (native details/summary - no JS required) */
@@ -298,6 +299,8 @@ nav a:hover { color: var(--navy); background: rgba(27, 58, 92, 0.07); text-decor
   letter-spacing: 0.02em;
   color: var(--warm-white);
   margin: 0 0 4px;
+  border-left: 4px solid var(--maroon);
+  padding-left: 12px;
 }
 
 .hero h1 {
@@ -397,7 +400,7 @@ section.alt {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--navy);
+  color: var(--maroon);
   margin: 0 0 10px;
 }
 
@@ -512,7 +515,7 @@ a.card:hover { text-decoration: none; }
 .officer-card h3 { margin: 0 0 8px; font-size: 1.02rem; }
 .officer-card .role {
   display: inline-block;
-  background: var(--navy);
+  background: var(--maroon);
   color: var(--warm-white);
   font-weight: 600;
   font-size: 0.72rem;
@@ -541,7 +544,7 @@ a.card:hover { text-decoration: none; }
 .event-row .date-stamp {
   flex-shrink: 0;
   width: 64px;
-  border: 2px solid var(--navy);
+  border: 2px solid var(--maroon);
   border-radius: 8px;
   text-align: center;
   overflow: hidden;
@@ -550,7 +553,7 @@ a.card:hover { text-decoration: none; }
 
 .event-row .date-stamp .month {
   display: block;
-  background: var(--navy);
+  background: var(--maroon);
   color: var(--warm-white);
   font-size: 0.68rem;
   font-weight: 700;
@@ -564,7 +567,7 @@ a.card:hover { text-decoration: none; }
   font-family: 'Big Shoulders Display', sans-serif;
   font-size: 1.9rem;
   font-weight: 800;
-  color: var(--navy);
+  color: var(--maroon);
   padding: 4px 0 6px;
 }
 
