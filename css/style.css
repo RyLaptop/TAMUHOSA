@@ -1,14 +1,13 @@
 /* TAMU HOSA — shared styles
    Architecture adapted from the FFAC template (header/nav, card/grid, button,
-   dropdown, and mobile rules) with a navy/teal palette and a sparing TAMU
-   maroon accent in place of FFAC's maroon/gold/herb palette. */
+   dropdown, and mobile rules). Two-color scheme: HOSA's official navy blue
+   (verified from HOSA's own rebrand brand file, PANTONE 301 U -> RGB(0,101,165))
+   dominant, TAMU maroon as the accent. */
 
 :root {
-  --navy: #1B3A5C;
-  --navy-dark: #14293F;
-  --navy-deep: #0F1E30;
-  --teal: #3AAFB9;
-  --teal-dark: #2C8A92;
+  --navy: #0065A5;
+  --navy-dark: #004C7C;
+  --navy-deep: #00385B;
   --maroon: #500000;
   --ink: #16222e;
   --cream: #f4f7f8;
@@ -135,7 +134,7 @@ header.site-header.scrolled {
   height: 40px;
   border-radius: 8px;
   background: linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 100%);
-  color: var(--teal);
+  color: var(--maroon);
   flex-shrink: 0;
   transition: transform 320ms var(--ease);
 }
@@ -280,7 +279,7 @@ nav a:hover { color: var(--navy); background: rgba(27, 58, 92, 0.07); text-decor
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--teal);
+  color: var(--maroon);
   margin: 0 0 18px;
 }
 
@@ -288,7 +287,17 @@ nav a:hover { color: var(--navy); background: rgba(27, 58, 92, 0.07); text-decor
   content: '';
   width: 22px;
   height: 1px;
-  background: var(--teal);
+  background: var(--maroon);
+}
+
+.hero-kicker {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--warm-white);
+  margin: 0 0 4px;
 }
 
 .hero h1 {
@@ -324,7 +333,7 @@ nav a:hover { color: var(--navy); background: rgba(27, 58, 92, 0.07); text-decor
   transition: transform 160ms var(--ease), box-shadow 160ms var(--ease), background 160ms var(--ease), color 160ms var(--ease), border-color 160ms var(--ease);
 }
 
-.btn:hover { text-decoration: none; background: var(--teal); border-color: var(--teal); color: var(--navy-deep); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.btn:hover { text-decoration: none; background: var(--maroon); border-color: var(--maroon); color: var(--navy-deep); transform: translateY(-2px); box-shadow: var(--shadow-md); }
 .btn:active { transform: translateY(0) scale(0.97); box-shadow: var(--shadow-sm); }
 
 .btn-outline {
@@ -350,7 +359,7 @@ nav a:hover { color: var(--navy); background: rgba(27, 58, 92, 0.07); text-decor
   color: var(--warm-white);
   padding: 58px 24px 52px;
   text-align: center;
-  border-bottom: 3px solid var(--teal);
+  border-bottom: 3px solid var(--maroon);
   overflow: hidden;
 }
 
@@ -437,7 +446,7 @@ h2.section-title {
   box-shadow: var(--shadow-lg);
 }
 
-.card.pillar-teal { --pin: var(--teal); }
+.card.pillar-teal { --pin: var(--maroon); }
 .card.pillar-maroon { --pin: var(--maroon); }
 
 .card .tag {
@@ -594,7 +603,7 @@ a.card:hover { text-decoration: none; }
 }
 
 .faq-item summary::-webkit-details-marker { display: none; }
-.faq-item summary::after { content: '+'; font-size: 1.2rem; color: var(--teal); }
+.faq-item summary::after { content: '+'; font-size: 1.2rem; color: var(--maroon); }
 .faq-item[open] summary::after { content: '\2212'; }
 .faq-item .faq-answer { padding: 0 20px 18px; color: var(--gray); }
 
@@ -643,7 +652,7 @@ footer.site-footer {
 
 footer.site-footer .footer-wrap a,
 footer.site-footer .footer-bottom a {
-  color: var(--teal);
+  color: var(--maroon);
 }
 
 footer.site-footer .footer-wrap a {
@@ -653,7 +662,7 @@ footer.site-footer .footer-wrap a {
 
 footer.site-footer .footer-wrap a:hover,
 footer.site-footer .footer-bottom a:hover {
-  color: var(--teal);
+  color: var(--maroon);
   opacity: 0.85;
 }
 
