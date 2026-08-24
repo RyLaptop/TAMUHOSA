@@ -41,21 +41,21 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  font-family: 'Public Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
   background-color: var(--cream);
   background-image:
-    radial-gradient(circle at 1px 1px, rgba(15, 30, 48, 0.05) 1px, transparent 0);
-  background-size: 22px 22px;
+    linear-gradient(rgba(15, 30, 48, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 30, 48, 0.045) 1px, transparent 1px);
+  background-size: 32px 32px;
   color: var(--ink);
-  line-height: 1.65;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, .brand {
-  font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif;
+  font-family: 'Space Grotesk', 'Arial Narrow', sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.01em;
 }
 
 img { max-width: 100%; display: block; }
@@ -94,10 +94,8 @@ summary:focus-visible {
 
 /* ---------- Header / Nav ---------- */
 header.site-header {
-  background: rgba(255, 255, 255, 0.82);
-  backdrop-filter: blur(14px) saturate(160%);
-  -webkit-backdrop-filter: blur(14px) saturate(160%);
-  border-bottom: 1px solid var(--border);
+  background: var(--warm-white);
+  border-bottom: 2px solid var(--navy);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -145,7 +143,7 @@ header.site-header.scrolled {
 
 .brand .affiliation {
   display: block;
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   text-transform: none;
   letter-spacing: 0;
   font-weight: 700;
@@ -177,7 +175,7 @@ nav a:hover { color: var(--navy); background: rgba(27, 58, 92, 0.07); text-decor
   background: var(--maroon);
   color: var(--warm-white) !important;
   padding: 9px 20px !important;
-  border-radius: 999px;
+  border-radius: 8px;
   font-weight: 600;
   margin-left: 4px;
   box-shadow: 0 3px 10px -3px rgba(80, 0, 0, 0.5);
@@ -275,7 +273,7 @@ nav a:hover { color: var(--navy); background: rgba(27, 58, 92, 0.07); text-decor
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -294,7 +292,7 @@ nav a:hover { color: var(--navy); background: rgba(27, 58, 92, 0.07); text-decor
 .hero-kicker {
   position: relative;
   display: block;
-  font-family: 'Big Shoulders Display', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(1.5rem, 2.8vw, 2.1rem);
   font-weight: 800;
   text-transform: uppercase;
@@ -343,7 +341,7 @@ nav a:hover { color: var(--navy); background: rgba(27, 58, 92, 0.07); text-decor
   font-weight: 700;
   font-size: 0.96rem;
   padding: 13px 28px;
-  border-radius: 999px;
+  border-radius: 8px;
   border: 2px solid var(--warm-white);
   transition: transform 160ms var(--ease), box-shadow 160ms var(--ease), background 160ms var(--ease), color 160ms var(--ease), border-color 160ms var(--ease);
 }
@@ -426,7 +424,7 @@ h2.section-title {
 
 .section-lede {
   text-align: center;
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 500;
   font-size: 1.08rem;
@@ -512,7 +510,7 @@ a.card:hover { text-decoration: none; }
 }
 
 .officer-photo .initials {
-  font-family: 'Big Shoulders Display', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 2.2rem;
   font-weight: 700;
 }
@@ -560,7 +558,7 @@ a.card:hover { text-decoration: none; }
   border-radius: 8px;
   text-align: center;
   overflow: hidden;
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .event-row .date-stamp .month {
@@ -576,7 +574,7 @@ a.card:hover { text-decoration: none; }
 
 .event-row .date-stamp .day {
   display: block;
-  font-family: 'Big Shoulders Display', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 1.9rem;
   font-weight: 800;
   color: var(--maroon);
@@ -658,7 +656,7 @@ footer.site-footer {
 }
 
 .footer-wrap .brand-col strong {
-  font-family: 'Big Shoulders Display', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
   letter-spacing: 0.02em;
   font-size: 1.15rem;
