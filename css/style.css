@@ -277,10 +277,9 @@ nav a:hover { color: var(--navy); background: rgba(27, 58, 92, 0.07); text-decor
   font-family: 'Public Sans', sans-serif;
   font-size: 0.76rem;
   font-weight: 700;
-  text-shadow: -1px -1px 0 var(--warm-white), 1px -1px 0 var(--warm-white), -1px 1px 0 var(--warm-white), 1px 1px 0 var(--warm-white);
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--maroon);
+  color: var(--warm-white);
   margin: 0 0 18px;
 }
 
@@ -653,8 +652,7 @@ footer.site-footer {
 
 footer.site-footer .footer-wrap a,
 footer.site-footer .footer-bottom a {
-  color: var(--maroon);
-  text-shadow: -1px -1px 0 var(--warm-white), 1px -1px 0 var(--warm-white), -1px 1px 0 var(--warm-white), 1px 1px 0 var(--warm-white);
+  color: var(--warm-white);
 }
 
 footer.site-footer .footer-wrap a {
@@ -664,8 +662,7 @@ footer.site-footer .footer-wrap a {
 
 footer.site-footer .footer-wrap a:hover,
 footer.site-footer .footer-bottom a:hover {
-  color: var(--maroon);
-  opacity: 0.85;
+  opacity: 0.75;
 }
 
 .footer-bottom {
