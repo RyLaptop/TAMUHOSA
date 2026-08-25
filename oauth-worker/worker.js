@@ -58,19 +58,18 @@ async function handleCallback(request, env) {
 
   const payload = JSON.stringify({ token: tokenData.access_token, provider: 'github' });
 
-  return htmlResponse(`<!DOCTYPE html><html><body>
-<script>
-(function () {
-  function receiveMessage(e) {
-    window.opener.postMessage('authorization:github:success:${payload.replace(/'/g, "\\'")}', e.origin);
-    window.removeEventListener('message', receiveMessage, false);
-  }
-  window.addEventListener('message', receiveMessage, false);
-  window.opener.postMessage('authorizing:github', '*');
-})();
-</script>
-Login complete — you can close this window.
-</body></html>`);
+  var script = "(function(){" +
+    "function receiveMessage(e){" +
+    "window.opener.postMessage('authorization:github:success:" + payload + "', e.origin);" +
+    "window.removeEventListener('message', receiveMessage, false);" +
+    "}" +
+    "window.addEventListener('message', receiveMessage, false);" +
+    "window.opener.postMessage('authorizing:github', '*');" +
+    "})();";
+
+  return htmlResponse(
+    '<!DOCTYPE html><html><body><script>' + script + '</script>Login complete - you can close this window.</body></html>'
+  );
 }
 
 export default {
