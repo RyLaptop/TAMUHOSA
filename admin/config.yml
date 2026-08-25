@@ -2,7 +2,7 @@ backend:
   name: github
   repo: RyLaptop/TAMUHOSA
   branch: main
-  base_url: https://REPLACE-WITH-YOUR-WORKER.workers.dev
+  base_url: https://tamuhosa-oauth.rylanlat.workers.dev
   auth_endpoint: auth
 
 publish_mode: simple
